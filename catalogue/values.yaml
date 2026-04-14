@@ -1,0 +1,6 @@
+deployment:
+  replicas: 2
+  image: "nginx"
+
+service:
+  type: LoadBalancer

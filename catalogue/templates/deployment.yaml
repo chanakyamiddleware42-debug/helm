@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chani
+  labels:
+    name: roboshop
+    environment: dev
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels: 
+      name: roboshop
+      environment: dev
+  template: 
+    metadata:
+      labels:   
+        name: roboshop
+        environment: dev
+    spec:       
+      containers:
+      - name: nginx
+        image: {{ .Values.deployment.image }}
