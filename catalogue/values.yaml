@@ -1,6 +1,6 @@
 deployment:
   replicas: 2
   image: "nginx"
-
+  tag: "1.29.8-perl"
 service:
   type: LoadBalancer

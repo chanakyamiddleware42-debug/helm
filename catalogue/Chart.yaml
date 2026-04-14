@@ -1,4 +1,4 @@
 apiVersion: v2
 name: nginx
-version: 1.0.0
-appVersion: latest
+version: 1.0.1
+appVersion: 1.29.8-perl
